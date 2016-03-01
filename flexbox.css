@@ -1,0 +1,35 @@
+body {
+  display:flex;
+  flex-direction: column;
+  color: white;
+}
+#header, #footer {
+  background-color: blue;
+  padding-bottom: 10vh;
+}
+#container {
+
+  display:flex;
+  border-top: 3px solid white;
+  border-bottom: 3px solid white;
+}
+#center {
+  background-color: gray;
+  flex-grow: 2;
+  order: 1;
+  border-left: 3px solid white;
+  border-right: 3px solid white;
+  padding-bottom: 70vh;
+}
+#left {
+  display: flex;
+  background-color: green;
+  flex-grow: 1;
+  order: 0;
+  justify-content: center;
+}
+#right {
+  background-color: red;
+  flex-grow: 1;
+  order: 2;
+}
